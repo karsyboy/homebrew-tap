@@ -1,25 +1,25 @@
 class ColorSsh < Formula
   desc "A Rust-based SSH client with syntax highlighting."
   homepage "https://github.com/karsyboy/color-ssh"
-  version "0.5.4"
+  version "0.5.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.4/color-ssh-aarch64-apple-darwin.tar.xz"
-      sha256 "480af7c1856e68f3f8d8be7d8155dff03acf0ef8e49b7302d1453979fbea89cd"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.5/color-ssh-aarch64-apple-darwin.tar.xz"
+      sha256 "5a5d5b90d3821f6784965065eea0e206f9e902fb93d8f1bf25ecf6d724dd541d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.4/color-ssh-x86_64-apple-darwin.tar.xz"
-      sha256 "a644a2debf50b34572956542f81b35a9392b4b7cf680e94a8a107c73941b2883"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.5/color-ssh-x86_64-apple-darwin.tar.xz"
+      sha256 "8cf8dc213444eda6bf5183e5a4f3c4fb2fee4037d44bfd1f7c1b76f626a0d48f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.4/color-ssh-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "49c7213df3d672722b81879d937c37e7b76091cb1097b4f7b09763d2d17e3c0c"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.5/color-ssh-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "aa19e51910d04fdfcd9e8535114e898217c1e2197819a13dd9501f7b54e121e5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.4/color-ssh-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ae5a29d41b260450494d01816403e312d1b61507827851374eb20e0a0ca5817d"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.5/color-ssh-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "03b260de7d4711eac03c9b4804248db28845c091448faac82f0c836c639446c4"
     end
   end
   license "MIT"
@@ -50,10 +50,10 @@ class ColorSsh < Formula
   end
 
   def install
-    bin.install "colorsh" if OS.mac? && Hardware::CPU.arm?
-    bin.install "colorsh" if OS.mac? && Hardware::CPU.intel?
-    bin.install "colorsh" if OS.linux? && Hardware::CPU.arm?
-    bin.install "colorsh" if OS.linux? && Hardware::CPU.intel?
+    bin.install "cossh" if OS.mac? && Hardware::CPU.arm?
+    bin.install "cossh" if OS.mac? && Hardware::CPU.intel?
+    bin.install "cossh" if OS.linux? && Hardware::CPU.arm?
+    bin.install "cossh" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
