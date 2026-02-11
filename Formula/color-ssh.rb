@@ -1,25 +1,25 @@
 class ColorSsh < Formula
   desc "A Rust-based SSH client with syntax highlighting."
   homepage "https://github.com/karsyboy/color-ssh"
-  version "0.5.7"
+  version "0.5.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.7/color-ssh-aarch64-apple-darwin.tar.xz"
-      sha256 "699f8485bfcd56845a74de1275257ce0997e81442cb703da5a71febc43fe9e75"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.8/color-ssh-aarch64-apple-darwin.tar.xz"
+      sha256 "ec4ae2315cd6f416c7b858d8586a3b4986906fc49c3c4ebb57d4e584ee1ed605"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.7/color-ssh-x86_64-apple-darwin.tar.xz"
-      sha256 "161c6dc8acdbfc898dd6f646f5706e15087f55b0cac61c043155e0fad35a079e"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.8/color-ssh-x86_64-apple-darwin.tar.xz"
+      sha256 "83740b89c87e87f5605ae7f9105094694f50b8f18d1122c982e82688b11bc02b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.7/color-ssh-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "68a76a2b377ec09189638aa42db8fab6767ad2d3c96e28a3540f18bfff9a4e0f"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.8/color-ssh-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ef557ea505eab6d35b2f3ac5d6a520fae2e67855e3d8e8cdb93db50a98db1aa9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.7/color-ssh-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6f36c095412b45686ece7e56387a99abce06d62f46007dc095e66ef2ee5cb6dc"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.8/color-ssh-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "6a465aef492b9870c19f563ab4e346591f931eba1bc59f5cea81194396858bbc"
     end
   end
   license "MIT"
