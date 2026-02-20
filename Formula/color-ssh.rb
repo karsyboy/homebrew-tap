@@ -1,25 +1,25 @@
 class ColorSsh < Formula
   desc "A Rust-based SSH client with syntax highlighting."
   homepage "https://github.com/karsyboy/color-ssh"
-  version "0.5.9"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.9/color-ssh-aarch64-apple-darwin.tar.xz"
-      sha256 "29092f5271fb9d228140474b0655dcdacbf4d30f89ba920032c6326fccfaf84b"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.6.0/color-ssh-aarch64-apple-darwin.tar.xz"
+      sha256 "20465359366a0f2d4d41ad286b98d5412c79dc11c97c24db859b8ef6b7285721"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.9/color-ssh-x86_64-apple-darwin.tar.xz"
-      sha256 "2bde03018cad4a8a9fbc5ae8fdf0188adde5ca86e91d1b3f4341baf7ff2acead"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.6.0/color-ssh-x86_64-apple-darwin.tar.xz"
+      sha256 "d2549f276b22a906a05aa5e9aeb88fbc057777ff8ee49be6eee213730f8e0727"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.9/color-ssh-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f55dd111fa3560a8625af515877f105402b3fb6b4f9cb8775c52a36fd37b6f1f"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.6.0/color-ssh-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f29721bc74f41b43e471e2c832bc2aaac5142d0bb4b2008bbb96ef5979663220"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/karsyboy/color-ssh/releases/download/v0.5.9/color-ssh-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2e0af3f9f1b391eedbab062a1c7c810163bba62f21fc79af7ebde289592357cc"
+      url "https://github.com/karsyboy/color-ssh/releases/download/v0.6.0/color-ssh-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ac736a759340be32ecebf4e0b7744cc59293108a948410bfd8322e97b9878f0a"
     end
   end
   license "MIT"
@@ -28,7 +28,6 @@ class ColorSsh < Formula
     "aarch64-apple-darwin":              {},
     "aarch64-unknown-linux-gnu":         {},
     "x86_64-apple-darwin":               {},
-    "x86_64-pc-windows-gnu":             {},
     "x86_64-unknown-linux-gnu":          {},
     "x86_64-unknown-linux-musl-dynamic": {},
     "x86_64-unknown-linux-musl-static":  {},
